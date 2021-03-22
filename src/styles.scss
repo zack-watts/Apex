@@ -11,7 +11,7 @@ body {
   height: 100vh;
   background: 100%;
   background: rgb(56, 68 , 85);
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .border-1px-link-water {
   border: 1px solid var(--link-water);
@@ -997,12 +997,9 @@ body {
   padding-right: 25px;
 }
 .vue-apex-dark-standalone .overlap-group1-1 {
-  align-self: flex-start;
-  height: 200px;
-  margin-top: 40px;
-  position: relative;
-  width: 200px;
-  margin-left: 80px;
+    margin-top: 40px;
+    position: fixed;
+    margin: auto;
 }
 .vue-apex-dark-standalone .overlap-group1-2 {
   height: 25px;

@@ -46,8 +46,8 @@ class DonutChart extends Component {
                 colors: ['#101B38', '#3EB4E7', '#538BF0', '#6510E8', '#FF29A2', '#FFA132', '#DFE8FB', '#06BCC1'],
                 chart: {
                     type: 'donut',
-                    width: 300,
-                    height: 175,
+                    width: 500,
+                    height: 300,
                     foreColor: 'white',
                     margin: 50
 

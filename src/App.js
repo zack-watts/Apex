@@ -3,6 +3,8 @@ import "./styles.scss"
 import ApexCharts from 'apexcharts'
 import LineChart from './graphs/LineChart.js';
 import DonutChart from './graphs/DonutChart.js';
+import "./Controls/Toggle.scss";
+import ToggleControl from "./Controls/ToggleControl.js";
 
 
 
@@ -232,9 +234,10 @@ function VUEApexDarkStandalone(props) {
           </div> */}
         </div>
         <div className="custom">
-          <div className="x-24px" style={{ backgroundImage: `url(${calendar_Today24Px})` }}>
+          <button className="x-24px" style={{ backgroundImage: `url(${calendar_Today24Px})` }}>
             <img className="path-2445" src={path2445} />
-          </div>
+          </button>
+
         </div>
         <div className="last-28-days">{last28Days}</div>
         <div className="clasa2aint smart-layers-pointers ">
@@ -459,9 +462,11 @@ function VUEApexDarkStandalone(props) {
           <div className="our-targets nunitosans-bold-link-water-16px">{ourTargets}</div>
         </div>
         <div className="toggle-night">
-          <div className="x-24px" style={{ backgroundImage: `url(${toggle_On24Px})` }}>
+          {/* <div className="x-24px" style={{ backgroundImage: `url(${toggle_On24Px})` }}>
             <img className="path-2492" src={path2492} />
-          </div>
+          </div> */}
+             <ToggleControl Name='toggle' />
+
           <div className="modenight-24px" style={{ backgroundImage: `url(${mode_Night24Px})` }}>
             <img className="path-2495" src={path2495} />
           </div>
